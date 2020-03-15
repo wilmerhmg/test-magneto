@@ -1,5 +1,5 @@
 import { getStarship } from '../service/swapi';
-import { starshipConverter } from '../converters';
+import { sortByCapacity, starshipConverter } from '../converters/starshipConverter';
 
 export const processStarship = async (shipList) => {
   const allEntries   = shipList.entries();
@@ -15,6 +15,8 @@ export const processStarship = async (shipList) => {
   }
 
   rawStarships.push(... await Promise.all(bulkPromises));
+  const starships     = rawStarships.map(starshipConverter);
+  const sortStarships = starships.sort(sortByCapacity);
 
-  return rawStarships.map(starshipConverter);
+  return [sortStarships.shift()];
 };
