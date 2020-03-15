@@ -1,40 +1,40 @@
 export class Starship {
-	constructor({name, model, manufacturer, passengers}) {
-		this._name         = name;
-		this._model        = model;
-		this._manufacturer = manufacturer;
-		this._passengers   = passengers;
-	}
+  constructor({ name, model, manufacturer, passengers }) {
+    this.name         = name;
+    this.model        = model;
+    this.manufacturer = manufacturer;
+    this.passengers   = passengers;
+  }
 
-	get name() {
-		return this._name;
-	}
+  get name() {
+    return this._name;
+  }
 
-	set name(value) {
-		this._name = value;
-	}
+  set name(value) {
+    this._name = value;
+  }
 
-	get model() {
-		return this._model;
-	}
+  get model() {
+    return this._model;
+  }
 
-	set model(value) {
-		this._model = value;
-	}
+  set model(value) {
+    this._model = value;
+  }
 
-	get manufacturer() {
-		return this._manufacturer;
-	}
+  get manufacturer() {
+    return this._manufacturer;
+  }
 
-	set manufacturer(value) {
-		this._manufacturer = value;
-	}
+  set manufacturer(value) {
+    this._manufacturer = value;
+  }
 
-	get passengers() {
-		return this._passengers;
-	}
+  get passengers() {
+    return this._passengers;
+  }
 
-	set passengers(value) {
-		this._passengers = value;
-	}
+  set passengers(value) {
+    this._passengers = value;
+  }
 }

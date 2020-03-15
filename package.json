@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-	"prestart": "npm install",
+    "prestart": "npm install",
     "start": "babel-node run.js"
   },
   "devDependencies": {
